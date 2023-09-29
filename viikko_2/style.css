@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root{
+  /* CSS HEX */
+--lion: #C19F79ff;
+--hunyadi-yellow: #E19F39ff;
+--bronze: #E07D27ff;
+--gamboge: #EB9722ff;
+--peach-yellow: #EFD08Aff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.footer-my {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}
+
+p{
+    text-align: left;
+    margin-left: 5%;
+}
+.about-my
+{
+    margin-top: 250px;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 20px;
+    background-image: url(/kabuli-big.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.positioned-image {
+  position: absolute;
+  top: 250px;
+  right: 240px; 
+  z-index: 0;
+}
+.navigation {
+    text-align: center;
+}
+.navigation h1,
+ul {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    display: inline;
+    margin-right: 20px;
+    float: left;
+}
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  img{
+    height: 150px;
+    width: 150px;
+  }
+
+  li a:hover {
+    background-color: #CC5533;
+  }
+  li a:active {
+    color: #002060;
+  }
+h1{
+    color: aliceblue;
+}
+footer{
+    height: 20px;
+    margin-top: 205px;
+    margin-bottom: 0px;
+    background-color: #E2D5BD;
+}
+
+footer p{
+    text-align: center;
+    display: block;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.SignIn-btn{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: var(--bronze);
+  color: #fff;
+  margin: 0;
+}
+.SignIn-dialog{
+  display: flex;
+  flex-direction: column;
+  flex: 1fr;
+  background: var(--bronze);
+  color: #fff;
+}
+
+dialog {
+  
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  border: none;
+  background: var(--lion);
+  border-radius: 10px;
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imgcontainer .avatar {
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--bronze);
+}
+
+.SignIn-dialog label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.SignIn-dialog input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--hunyadi-yellow);
+}
+
+.SignIn-dialog input:focus {
+  border-color: var(--gamboge);
+  outline: none;
+}
+
+.SignIn-dialog button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.SignIn-dialog button[type="submit"] {
+  background-color: var(--gamboge);
+  color: white;
+}
+
+.SignIn-dialog button[type="submit"]:hover {
+  background-color: var(--bronze);
+}
+
+input:only-child {
+  border-radius: 5px;
+}
+
+input:not(:first-child):not(:last-child) {
+  margin-top: 10px;
+}
+
+input:valid {
+  border: 2px solid green;
+  transition: border 0.3s ease-in-out;
+}
+
+input:invalid {
+  border: 2px solid red;
+  transition: border 0.3s ease-in-out;
+}
+
+
+
+
