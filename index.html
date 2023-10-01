@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ResturanteQQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <dialog id="signInDialog">
+        <form>
+            <div>
+                <h2>Register with your details</h2>
+            </div>
+            <div class="imgcontainer">
+                <img src="https://static.animecorner.me/2022/11/zoro-roronoa-2022-birthday-one-piece.jpg" alt="Avatar" class="avatar">
+            </div>
+    
+            <div class="SignIn-dialog">
+                <label><b>Lastname</b></label>
+                <input type="text" placeholder="Enter your Lastname, minimum 3 characters" required pattern=".{3,}" title="Name must be at least 3 characters.">
+    
+                <label><b>@metropolia Email</b></label>
+                <input type="email" placeholder="Enter email" required pattern=".+@metropolia\..+" title="Email should be from @metropolia">
+          
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" required pattern=".{5,}" title="Password should be at least 5 characters.">
+    
+                <button type="submit">Login</button>
+                <button id="cancel-btn" type="button" autofocus>Cancel</button>
+            </div>
+        </form>
+    </dialog>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Afghan Epicurean Haven</a></li>
+                <li style="margin-top:20px;"><a href="#home">Home</a></li>
+                <li style="margin-top:20px;"><a href="#news">News</a></li>
+                <li style="margin-top:20px;"><a href="#contact">Contact</a></li>
+                <li style="margin-top:20px;"><button class="SignIn-btn">SignIn</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Afghan Epicurean Haven</h1>
+            <p>Filled with deliciouuus fooodeee .....</p>
+        </div>
+    </section>
+    
+    <section class="menu-section">
+        <h2 class="menu-section-item1">Menu</h2>
+        <div class="menu-section-item2"> <h3>Rice with chicken</h3>
+            <p>ingredient:</p>
+            <ul>
+                <li>
+                    Chicken breast
+                </li>
+                <li>
+                    Basmati Rice
+                </li>
+            </ul>
+        
+        </div>
+        <div class="menu-section-item3"> <h3>Today's Special</h3>
+            <p>ingredient:</p>
+            <ul>
+                <li>
+                    Beef 
+                </li>
+                <li>
+                    Potatos & Carrots
+                </li>
+            </ul>
+        </div>
+        <div class="menu-section-item4"> <h3>Month's most popular</h3>
+            <p>ingredient:</p>
+            <ul>
+                <li>
+                    Sambosa 
+                </li>
+                <li>
+                    Potatos, Carrots, Corn, Sunflower
+                </li>
+            </ul>
+        </div>
+        <div class="menu-section-item5"> <h3>First timer</h3>
+            <p>ingredient:</p>
+            <ul>
+                <li>
+                    Tuna & bread
+                </li>
+                <li>
+                    French fries & boild Egg
+                </li>
+                <li>
+                    salad
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="about-us-section">
+        <img src="naan-3.jpg" alt="Description" class="stuck-image">
+        <h2 style="color:black;">About Us</h2>
+        <p>We are a company that specializes in making the best food humanly posible. We've been in business since 2023 and are known for best customer service/food.</p>
+    </section>
+
+    <footer>
+        Made by A.K.A: MasterSAE
+    </footer>
+    
+<script src="main.js"></script>
+</body>
+</html>

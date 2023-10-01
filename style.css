@@ -1,0 +1,300 @@
+:root {
+  /* CSS HEX */
+  --lion: #C19F79ff;
+  --hunyadi-yellow: #E19F39ff;
+  --bronze: #E07D27ff;
+  --gamboge: #EB9722ff;
+  --peach-yellow: #EFD08Aff;
+}
+
+/* Custom Font added */
+@font-face {
+  font-family: "CustomFont";
+  src: url("Young_Serif/YoungSerif-Regular.ttf");
+ 
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "CustomFont", Arial, sans-serif;
+    margin: 0;
+    padding: 0 25px;
+    overflow-x: hidden;
+    background-color: var(--peach-yellow);
+    color: var(--lion);
+    margin-top: 85px;
+    position: relative;
+}
+.stuck-image {
+  height: 100px;
+  position: absolute;
+  top: 1300px;
+  right: 50px; 
+}
+
+nav {
+  background-color: var(--bronze);
+  position: fixed;
+  top: 0;
+  left: 25px; 
+  right: 25px; 
+  width: auto; 
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:hover {
+  background-color: var(--lion);
+}
+nav li:first-child {
+  font-size: 50px;
+  font-weight: bold;
+  color: aliceblue;
+}
+nav li .SignIn-btn {
+  display: block;
+  background: none; 
+  border: none;   
+  color: aliceblue;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: "CustomFont", Arial, sans-serif; 
+  cursor: pointer; 
+  text-decoration: none; 
+  outline: none; 
+  transition: background-color 0.3s;
+}
+nav li .SignIn-btn:hover {
+  background-color: var(--lion);
+}
+
+/* Dialog Container */
+dialog {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 400px;
+  margin: 5% auto;
+  padding: 20px;
+  background-color: var(--peach-yellow);
+}
+dialog h2 {
+  color: var(--lion);
+  margin-top: 0;
+}
+.imgcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.SignIn-dialog {
+  display: flex;
+  flex-direction: column;
+}
+.SignIn-dialog label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--lion);
+}
+.SignIn-dialog input[type="text"],
+.SignIn-dialog input[type="email"],
+.SignIn-dialog input[type="password"] {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid var(--lion);
+  border-radius: 5px;
+  background-color: white;
+  color: var(--lion);
+}
+.SignIn-dialog button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--lion);
+  color: var(--peach-yellow);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.SignIn-dialog button[type="submit"]:hover {
+  background-color: var(--bronze);
+}
+#cancel-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--bronze);
+  color: var(--peach-yellow);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#cancel-btn:hover {
+  background-color: var(--lion);
+}
+section {
+    padding: 50px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid var(--hunyadi-yellow);
+}
+.hero-section {
+  background: url('naan-3.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  text-align: center;
+  color: rgb(255, 0, 0);
+}
+
+
+
+.menu-section {
+    background-color: var(--gamboge);
+    color: green;
+}
+
+.menu-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-section li {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: var(--peach-yellow);
+    border-radius: 5px;
+    text-align: center;
+    color: var(--lion);
+}
+.menu-section-item1{
+  grid-area: item1;
+}
+.menu-section-item2{
+  grid-area: item2;
+}
+.menu-section-item3{
+  grid-area: item3;
+}
+.menu-section-item4{
+  grid-area: item4;
+}
+.menu-section-item5{
+  grid-area: item5;
+}
+.menu-section {
+  text-align: center;
+  display: grid;
+  grid-template-areas: 'item1 item1'
+                       'item2 item3'
+                       'item4 item5';
+  gap: 20px;
+}
+  
+
+
+
+.menu-item {
+  background-color: var(--gamboge);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.about-us-section {
+  background: url(kabuli-big.jpg) no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+footer {
+    background-color: var(--lion);
+    color: var(--peach-yellow);
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1, h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 30px;
+    }
+    
+    h1, h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .stuck-image {
+    height: 100px;
+    position: absolute;
+    top: 1725px;  /* Adjust these values */
+    right: 50px; /* to position the image as needed */
+  }
+  .menu-section-item1{
+    grid-area: item1;
+  }
+  .menu-section-item2{
+    grid-area: item2;
+  }
+  .menu-section-item3{
+    grid-area: item3;
+  }
+  .menu-section-item4{
+    grid-area: item4;
+  }
+  .menu-section-item5{
+    grid-area: item5;
+  }
+  .menu-section {
+    justify-content: center;
+    display: grid;
+    grid-template-areas: 'item1 item1'
+                         'item2 item2'
+                         'item3 item3'
+                         'item4 item4'
+                         'item5 item5';
+    gap: 20px;
+  }
+    section {
+        padding: 20px;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+    }
+}
